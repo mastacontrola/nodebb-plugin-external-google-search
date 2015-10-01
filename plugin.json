@@ -1,0 +1,17 @@
+{
+    "id": "nodebb-plugin-external-google-search",
+    "name": "External Google Search",
+    "description": "A Plugin that allows users to search posts and topics using Google Custom Search Engine (CSE)",
+    "url": "https://github.com/jbob182/nodebb-plugin-external-google-search",
+    "library": "./index.js",
+    "staticDirs": {
+        "dbsearch": "public"
+    },
+    "hooks": [
+
+        { "hook": "static:app.load", "method": "init"},
+        { "hook": "filter:admin.header.build", "method": "admin.menu"},
+        { "hook": "filter:middleware.renderHeader", "method": "renderHeader"}
+    ],
+    "templates": "./public/templates"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "nodebb-plugin-external-google-search",
+  "version": "0.0.1",
+  "description": "A Plugin that allows users to search posts and topics using Google Custom Search",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbob182/nodebb-plugin-external-google-search"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "search"
+  ],
+  "author": "jbob182 <contact@jbob.io>",
+  "license": "MIT",
+  "dependencies": {},
+  "nbbpm": {
+    "compatibility": "^0.7.0 || ^0.8.0"
+  }
+}
