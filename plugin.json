@@ -10,8 +10,10 @@
     "hooks": [
 
         { "hook": "static:app.load", "method": "init"},
-        { "hook": "filter:admin.header.build", "method": "admin.menu"},
-        { "hook": "filter:middleware.renderHeader", "method": "renderHeader"}
+        { "hook": "filter:admin.header.build", "method": "adminMenu"}
+    ],
+    "scripts": [
+      "./searchButton.js"
     ],
     "templates": "./public/templates"
 }
