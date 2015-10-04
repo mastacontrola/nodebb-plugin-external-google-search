@@ -30,14 +30,11 @@ $(function (){
 });
 function search(data) {
 	if (typeof(data) == 'undefined') data = '';
-  $.ajax({
-   url: 'http://yourserver/',
-   data: 'your image',
-   success: function(){window.open(someUrl);},
+  var url = $.ajax({
+   type: 'GET',
+   url: '/CSE',
+   data: '',
    async: false
-  });
-
-  $.get('/CSE', function(res) {
-     window.open(res+data, '_blank');
-   });
+  }).responseText;
+  window.open(url+data, '_blank');
 }
