@@ -1,5 +1,7 @@
 var html = '';
 $(function (){
+    console.log("Removing native search function");
+    $("[href='/search']").remove();
     html += '<li class="">' ;
     html += ' <form id="search-form" class="navbar-form navbar-right hidden-xs">';
     html += '   <div id="search-fields">';
